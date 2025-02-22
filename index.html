@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Birthday Celebration - BIN Salomon 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 You're Invited! 🎂</h1>
+        <p class="announcement" id="greeting"></p>
+        <div class="slider">
+            <img src="hbd.png" alt="Birthday Cake" class="active">
+            <img src="slm.jpg" alt="Party Celebration">
+        </div>
+                <p class="details">📅 Date: 28th February 2025</p>
+        <p class="details">📍 Location: My Home - Bring your gifts and good vibes! 🎁🎊</p>
+        <button id="confirmBtn">Confirm Your Attendance 🎊</button>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <h2>Confirm Your Attendance</h2>
+        <form action="https://formsubmit.co/binslm1234@gmail.com" method="POST" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+        
+            <input type="hidden" name="_captcha" value="false">
+        
+            <input type="hidden" name="_replyto" value="{email}">
+        
+            <input type="hidden" name="_subject" id="dynamicSubject">
+        
+            <input type="hidden" name="_next" value="true">
+        
+            <button type="submit">Submit Confirmation</button>
+        </form>
+        <div id="formMessage" style="display:none; color: green;">Message sent successfully!</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
